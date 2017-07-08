@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>my site</title>
+    <title>Aurum: Find Jobs</title>
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/my-styles.css">
@@ -14,7 +14,11 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
     
 </head>
+
+
+
 <body>
+
 	<!-- 
 	******************
 	HEADER STARTS HERE
@@ -25,19 +29,22 @@
 			<div class="container">
 				<div class="navbar-header">
 					<a href="index.html" class="pull-left visible-md visible-lg">
-	    			<div id="logo-img" alt="Logo image"></div>
-	  			</a>
+	    				<div id="logo-img" alt="Logo image"></div>
+	  				</a>
 
-	  			<a href="index.html" class="pull-left visible-xs visible-sm">
-	    			<div id="logo-img-small" class="resize" alt="Logo image small"></div>
-	  			</a>
+	  				<a href="index.html" class="pull-left visible-xs visible-sm">
+	    				<div id="logo-img-small" class="resize" alt="Logo image small"></div>
+	  				</a>
 
 	  			<div class="navbar-brand">
-	  				<a href="index.html"><h1>Batman rises!</h1>
+	  				<a href="index.html"><h1>Aurum</h1>
 	  				</a>
 	  				<p>
-	  					<img class="resize JLlogo" src="images/JL_logo.png" alt="Justice League">
-	  					<span>Justice League Certified</span>
+	  					<span>
+	  						Looking for a job? Apply!
+	  						<br>
+	  						Looking for an employee? Submit a job!
+	  						</span>
 	    			</p>
 	  			</div>
 
@@ -52,26 +59,40 @@
 				<div id="collapsable-nav" class="collapse navbar-collapse">
 					<ul id="nav-list" class="nav navbar-nav navbar-right">
 						<li>
-							<a href="batman-movies.html">
-								<span class="glyphicon glyphicon-film"></span>
+							<a href="submit_job.html">
+								<span class="glyphicon glyphicon-briefcase"></span>
 								<br class="hidden-xs">
-								Movies
+								Submit
+								<br class="hidden-xs">
+								a job
 							</a>
 						</li>
 						<li>
-							<a href="https://en.wikipedia.org/wiki/Batman">
-								<span class="glyphicon glyphicon-info-sign"></span>
+							<a href="list_only.html">
+								<span class="glyphicon glyphicon-list"></span>
 								<br class="hidden-xs">
-								About
+								List
 							</a>
 						</li>
 						<li>
-							<a href="justice-league.html">
+							<a href="map_only.html">
+								<span class="glyphicon glyphicon-map-marker"></span>
+								<br class="hidden-xs">
+								Map
+							</a>
+						</li>
+						<li>
+							<a href="help.html">
+								<span class="glyphicon glyphicon-question-sign"></span>
+								<br class="hidden-xs">
+								Help
+							</a>
+						</li>
+						<li>
+							<a href="profile.html">
 								<span class="glyphicon glyphicon-user"></span>
 								<br class="hidden-xs">
-								Justice
-								<br class="hidden-xs">
-								League
+								Profile
 							</a>
 						</li>
 					</ul>
@@ -91,15 +112,52 @@
 	*********************
 	-->
 	<div class="container">
-		<div class="jumbotron">
-			<img src="images/food.jpg" alt="food" class="img-responsive">
+
+		<div class="row">
+	
+			<div id="list_of_jobs" class="column col-lg-6 col-md-6 col-sm-12">
+				<table style="width:100%">
+				  <tr>
+				    <th>Job Title</th>
+				    <th>Salary</th> 
+				    <th>Hours</th>
+				    <th>Date</th>
+				  </tr>
+				  <tr>
+				    <td>Knight</td>
+				    <td>1 gold coin</td> 
+				    <td>50</td>
+				    <td>7/7/1550</td>
+				  </tr>
+				  <tr>
+				    <td>Pilot</td>
+				    <td>50$</td> 
+				    <td>10</td>
+				    <td>7/7/1942</td>
+				  </tr>
+				  <tr>
+				  	<td>Nanny</td>
+				    <td>15$</td> 
+				    <td>50</td>
+				    <td>7/7/2017</td>
+				  </tr>
+				</table>
+			</div>
+
+			<div class="column col-lg-6 col-md-6 col-sm-12" id="map" style="height: 50vh;"></div>
+
+			<script> myMap(); </script>
 		</div>
 	</div>
-
 
 	<!-- jQuery (Bootstrap JS plugins depend on it) -->
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/map.js"></script>
+
+	<!-- Call the map function -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwk-2iy7NwFQ4QjGIhkzyMEcuKYALNGk8&callback=myMap"></script>
+
 </body>
 </html>

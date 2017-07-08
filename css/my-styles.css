@@ -109,6 +109,16 @@ img.resize{
 	border-radius: 0px;
 }
 
+
+/*	Table styles go here*/
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+	text-align: center
+}
+
 /* 	------------------
 	------------------
 	MEDIA QUERIES HERE
