@@ -13,6 +13,17 @@
 
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
     
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/table.js"></script>
+
+    <!-- Call the map function -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwk-2iy7NwFQ4QjGIhkzyMEcuKYALNGk8&callback=myMap"></script>
+
 </head>
 
 
@@ -115,49 +126,21 @@
 
 		<div class="row">
 	
-			<div id="list_of_jobs" class="column col-lg-6 col-md-6 col-sm-12">
-				<table style="width:100%">
-				  <tr>
-				    <th>Job Title</th>
-				    <th>Salary</th> 
-				    <th>Hours</th>
-				    <th>Date</th>
-				  </tr>
-				  <tr>
-				    <td>Knight</td>
-				    <td>1 gold coin</td> 
-				    <td>50</td>
-				    <td>7/7/1550</td>
-				  </tr>
-				  <tr>
-				    <td>Pilot</td>
-				    <td>50$</td> 
-				    <td>10</td>
-				    <td>7/7/1942</td>
-				  </tr>
-				  <tr>
-				  	<td>Nanny</td>
-				    <td>15$</td> 
-				    <td>50</td>
-				    <td>7/7/2017</td>
-				  </tr>
+			<div class="column col-lg-7 col-md-7 col-sm-12">
+				<table id= "listOfJobs">
+					<script type="text/javascript">
+					  drawTable();
+					</script>
 				</table>
 			</div>
 
-			<div class="column col-lg-6 col-md-6 col-sm-12" id="map" style="height: 50vh;"></div>
+			<div class="column col-lg-5 col-md-5 col-sm-12" id="mapOfJobs" style="height: 60vh;">
+				<script> myMap(); </script>
+			</div>
 
-			<script> myMap(); </script>
+			
 		</div>
 	</div>
-
-	<!-- jQuery (Bootstrap JS plugins depend on it) -->
-	<script src="js/jquery-3.1.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/map.js"></script>
-
-	<!-- Call the map function -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwk-2iy7NwFQ4QjGIhkzyMEcuKYALNGk8&callback=myMap"></script>
 
 </body>
 </html>

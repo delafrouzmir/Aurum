@@ -118,6 +118,9 @@ table, th, td {
 th, td {
 	text-align: center
 }
+table {
+	width: 100%;
+}
 
 /* 	------------------
 	------------------
