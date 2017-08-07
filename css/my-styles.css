@@ -113,7 +113,14 @@ body{
 }
 
 
-/*	Table styles go here*/
+/*	--------------------
+	Table styles go here
+	-------------------- */
+table {
+	width: 100%;
+}
+
+/*	Table for list of jobs */
 #listOfJobs > table, #listOfJobs th, #listOfJobs td {
     border: 1px solid #DFDCE3;
     border-collapse: collapse;
@@ -121,19 +128,31 @@ body{
 }
 #listOfJobs th {
 	font-weight: bold;
+	text-align: center;
 }
-th, td {
+#listOfJobs td {
 	text-align: center;
 }
 #listOfJobs tr:nth-child(odd) {
     background-color: #DFDCE3;
 }
-table {
-	width: 100%;
-}
+
+/*	Search Form Table styles go here*/
 td > input {
 	width: 100%;
-	padding-right: 10px;
+	padding: 4px;
+}
+#searchForm td {
+	padding: 4px;
+}
+
+#locationBox, #durationBox, #startDateBox, #submitBtn {
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+#countryDropDown {
+	width: 100%;
 }
 
 /* 	------------------
@@ -141,27 +160,43 @@ td > input {
 	MEDIA QUERIES HERE
 	------------------
 	--------------- */
+/* Very large */
+@media (min-width: 2200px) {
+  .container {
+    width: 2150px;
+  }
+}
+
+/* Ultra-Large devices */
+@media (max-width: 2199px) and (min-width: 1750px) {
+  .container {
+    width: 1700px;
+  }
+}
+
+/* XLarge devices */
+@media (max-width: 1749px) and (min-width: 1450px) {
+  .container {
+    width: 1410px;
+  }
+}
 
 /*	Large devices*/
-@media (min-width: 1200px){
-	.container .jumbotron{
-		background-image: url('../images/gotham-lg.jpg');
-		background-repeat: no-repeat;
-		height: 646px;
-	}
+@media (max-width: 1449px) and (min-width: 1200px){
+	
 }
 
 /*	Medium devices */
 @media (max-width: 1199px) and (min-width: 992px){
-	.container .jumbotron{
-		background-image: url('../images/gotham-md.jpg');
-		background-repeat: no-repeat;
-		height: 534px;
-	}
+	
 }
 
 /*	Small devices*/
 @media (max-width: 991px) and (min-width: 768px){
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+	.col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		padding-bottom: 15px;
+	}
 	#nav-list{
 		margin-top: -5px;
 	}
@@ -171,16 +206,14 @@ td > input {
 	.navbar-brand h1, .navbar-brand p {
 		margin-left: 20px;
 	}
-
-	.container .jumbotron{
-		background-image: url('../images/gotham-sm.jpg');
-		background-repeat: no-repeat;
-		height: 421px;
-	}
 }
 
 /*	Extra small devices*/
 @media (max-width: 767px){
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
+	.col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+		padding-bottom: 15px;
+	}
 	#nav-list{
 		margin-top: -5px;
 	}

@@ -1602,6 +1602,21 @@ pre code {
     width: 1170px;
   }
 }
+@media (min-width: 1450px) {
+  .container {
+    width: 1410px;
+  }
+}
+@media (min-width: 1750px) {
+  .container {
+    width: 1700px;
+  }
+}
+@media (min-width: 2200px) {
+  .container {
+    width: 2150px;
+  }
+}
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
