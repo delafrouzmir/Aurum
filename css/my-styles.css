@@ -126,12 +126,15 @@ table {
     border-collapse: collapse;
     font-size: 1.1em;
 }
+#listOfJobs tr {
+	line-height: 1.6em;
+}
 #listOfJobs th {
 	font-weight: bold;
 	text-align: center;
 }
 #listOfJobs td {
-	text-align: center;
+	text-align: center
 }
 #listOfJobs tr:nth-child(odd) {
     background-color: #DFDCE3;
@@ -141,18 +144,24 @@ table {
 td > input {
 	width: 100%;
 	padding: 4px;
+	font-size: 1.1em;
 }
 #searchForm td {
 	padding: 4px;
 }
 
-#locationBox, #durationBox, #startDateBox, #submitBtn {
-	margin-top: 20px;
-	padding-top: 20px;
+#locationBox, #durationBox, #startDateBox, #countryBox {
+	line-height: 3em;
+	vertical-align: bottom;
 }
 
 #countryDropDown {
 	width: 100%;
+}
+
+.btn {
+	border: 0px;
+	background-color: #DFDCE3;
 }
 
 /* 	------------------
