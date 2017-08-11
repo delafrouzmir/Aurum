@@ -11,6 +11,16 @@
 }
 
 /* LOGO IMAGES, LARGE AND SMALL*/
+#logo-img-xl-div{
+	background-image: url("../images/AurumLogoXL.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 400px;
+	height: 100px;
+	margin: 20px;
+	object-fit: contain;
+}
+
 #logo-img-div{
 	background-image: url("../images/AurumLogo.png");
 	background-repeat: no-repeat;
@@ -169,25 +179,46 @@ td > input {
 	MEDIA QUERIES HERE
 	------------------
 	--------------- */
+.visible-xl {
+	display: none !important;
+}
 /* Very large */
 @media (min-width: 2200px) {
-  .container {
-    width: 2150px;
-  }
+	.container {
+		width: 2150px;
+	}
+	.visible-xl {
+		display: block !important;
+	}
+	.visible-lg {
+		display: none !important;
+	}
 }
 
 /* Ultra-Large devices */
 @media (max-width: 2199px) and (min-width: 1750px) {
-  .container {
-    width: 1700px;
-  }
+	.container {
+		width: 1710px;
+	}
+	.visible-xl {
+		display: block !important;
+	}
+	.visible-lg {
+		display: none !important;
+	}
 }
 
 /* XLarge devices */
 @media (max-width: 1749px) and (min-width: 1450px) {
-  .container {
-    width: 1410px;
-  }
+	.container {
+		width: 1410px;
+	}
+	.visible-xl {
+		display: block !important;
+	}
+	.visible-lg {
+		display: none !important;
+	}
 }
 
 /*	Large devices*/
